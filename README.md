@@ -1,32 +1,23 @@
-# Glizzy Web Template
+# Glizzy Web Clean
 
-Asset-ready web app zip.
+Clean asset-ready version with split audio pools.
 
-## What it does
-- Button 1: **GLIZZY**
-- Button 2: **UNGLIZZY**
-- Both buttons use their own image pools
-- Randomly plays one of 5 audio clips
-- No immediate repeat on image or audio choice
-- Supports mixed image extensions via `assets/manifest.json`
+## Buttons
+- **GLIZZY** uses `glizzyAudio` + `glizzies`
+- **UNGLIZZY** uses `unglizzyAudio` + `unglizzies`
 
-## Add your assets in `assets/`
-Example naming structure:
-- `glizzy_1.mp3` through `glizzy_5.mp3`
-- `glizzy_1.png`, `glizzy_2.jpg`, `glizzy_3.webp`, etc.
-- `unglizzy_1.png`, `unglizzy_2.jpg`, `unglizzy_3.webp`, etc.
+## No immediate repeats
+Implemented separately for:
+- glizzy images
+- unglizzy images
+- glizzy audio
+- unglizzy audio
 
-## Important
-Update `assets/manifest.json` to match the files you actually upload.
+## Add your files in `assets/`
+Then update `assets/manifest.json` to match your real filenames.
 
-## Host it
-Works with any static host:
+## Host
+Static host is enough:
 - GitHub Pages
 - Netlify
 - Vercel
-
-## Local test
-```bash
-python3 -m http.server 8000
-```
-Then open `http://localhost:8000`
