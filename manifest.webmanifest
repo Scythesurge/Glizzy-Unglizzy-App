@@ -5,5 +5,5 @@
   "display": "standalone",
   "background_color": "#111111",
   "theme_color": "#d7263d",
-  "description": "One button for glizzy. One button for unglizzy."
+  "description": "Clean split-audio glizzy/unglizzy web app."
 }

@@ -1,4 +1,4 @@
-const CACHE = 'glizzy-web-template-v1';
+const CACHE = 'glizzy-web-clean-v1';
 const CORE = [
   './',
   './index.html',
