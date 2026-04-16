@@ -1,0 +1,19 @@
+{
+  "audio": [
+    "assets/glizzy_1.mp3",
+    "assets/glizzy_2.mp3",
+    "assets/glizzy_3.mp3",
+    "assets/glizzy_4.mp3",
+    "assets/glizzy_5.mp3"
+  ],
+  "glizzies": [
+    "assets/glizzy_1.png",
+    "assets/glizzy_2.jpg",
+    "assets/glizzy_3.webp"
+  ],
+  "unglizzies": [
+    "assets/unglizzy_1.png",
+    "assets/unglizzy_2.jpg",
+    "assets/unglizzy_3.webp"
+  ]
+}
