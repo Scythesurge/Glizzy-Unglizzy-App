@@ -1,10 +1,12 @@
 {
-  "audio": [
+  "glizzyAudio": [
     "assets/glizzy_1.mp3",
     "assets/glizzy_2.mp3",
     "assets/glizzy_3.mp3",
     "assets/glizzy_4.mp3",
-    "assets/glizzy_5.mp3",
+    "assets/glizzy_5.mp3"
+  ],
+    "unglizzyAudio": [
     "assets/Unglizzy_1.mp3",
     "assets/Unglizzy_2.mp3",
     "assets/Unglizzy_3.mp3",
