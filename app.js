@@ -4,7 +4,13 @@ const unglizzyButton = document.getElementById('unglizzyButton');
 const glizzyAudio = document.getElementById('glizzyAudio');
 const caption = document.getElementById('caption');
 
-let manifest = { glizzyAudio: [], unglizzyAudio: [], glizzies: [], unglizzies: [] };
+let manifest = {
+  glizzyAudio: [],
+  unglizzyAudio: [],
+  glizzies: [],
+  unglizzies: []
+};
+
 let lastGlizzyImage = null;
 let lastUnglizzyImage = null;
 let lastGlizzyAudio = null;
@@ -32,10 +38,12 @@ function randomItem(list) {
 function randomItemNoRepeat(list, lastValue) {
   if (!list || !list.length) return null;
   if (list.length === 1) return list[0];
+
   let value;
   do {
     value = randomItem(list);
   } while (value === lastValue);
+
   return value;
 }
 
@@ -59,8 +67,11 @@ async function playRandomAudio(kind) {
     return;
   }
 
-  if (kind === 'glizzy') lastGlizzyAudio = sound;
-  else lastUnglizzyAudio = sound;
+  if (kind === 'glizzy') {
+    lastGlizzyAudio = sound;
+  } else {
+    lastUnglizzyAudio = sound;
+  }
 
   try {
     glizzyAudio.pause();
@@ -82,8 +93,11 @@ async function handlePool(kind) {
     return;
   }
 
-  if (kind === 'glizzy') lastGlizzyImage = image;
-  else lastUnglizzyImage = image;
+  if (kind === 'glizzy') {
+    lastGlizzyImage = image;
+  } else {
+    lastUnglizzyImage = image;
+  }
 
   displayImage.src = image + `?t=${Date.now()}`;
   caption.textContent = randomItem(captions[kind]);

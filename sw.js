@@ -1,16 +1,15 @@
-const CACHE = 'glizzy-web-clean-v2';
+const CACHE = 'glizzy-shell-v1';
 
-const CORE = [
+const SHELL = [
   './',
   './index.html',
   './styles.css',
-  './app.js',
-  './manifest.webmanifest',
-  './assets/manifest.json'
+  './manifest.webmanifest'
 ];
+
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE).then(cache => cache.addAll(CORE))
+    caches.open(CACHE).then(cache => cache.addAll(SHELL))
   );
   self.skipWaiting();
 });
@@ -22,14 +21,32 @@ self.addEventListener('activate', event => {
         keys
           .filter(key => key !== CACHE)
           .map(key => caches.delete(key))
-              )
+      )
     )
   );
   self.clients.claim();
 });
 
 self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+
+  const isDynamic =
+    url.pathname.endsWith('/app.js') ||
+    url.pathname.endsWith('/assets/manifest.json') ||
+    url.pathname.includes('/assets/');
+
+  if (isDynamic) {
+    event.respondWith(
+      fetch(event.request)
+        .then(response => response)
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
   event.respondWith(
-    caches.match(event.request).then(resp => resp || fetch(event.request))
+    caches.match(event.request).then(cached => {
+      return cached || fetch(event.request);
+    })
   );
 });
