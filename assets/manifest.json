@@ -1,31 +1,31 @@
 {
   "glizzyAudio": [
-    "assets/glizzy_1.mp3",
-    "assets/glizzy_2.mp3",
-    "assets/glizzy_3.mp3",
-    "assets/glizzy_4.mp3",
-    "assets/glizzy_5.mp3"
+    "assets/glizzies/audio/glizzy_1.mp3",
+    "assets/glizzies/audio/glizzy_2.mp3",
+    "assets/glizzies/audio/glizzy_3.mp3",
+    "assets/glizzies/audio/glizzy_4.mp3",
+    "assets/glizzies/audio/glizzy_5.mp3"
   ],
     "unglizzyAudio": [
-    "assets/unglizzy_1.mp3",
-    "assets/unglizzy_2.mp3",
-    "assets/unglizzy_3.mp3",
-    "assets/unglizzy_4.mp3"
+    "assets/unglizzies/audio/unglizzy_1.mp3",
+    "assets/unglizzies/audio/unglizzy_2.mp3",
+    "assets/unglizzies/audio/unglizzy_3.mp3",
+    "assets/unglizzies/audio/unglizzy_4.mp3"
   ],
   "glizzies": [
-    "assets/glizzy_1.png",
-    "assets/glizzy_2.png",
-    "assets/glizzy_3.png",
-    "assets/glizzy_4.png",
-    "assets/glizzy_5.png",
-    "assets/glizzy_6.png"
+    "assets/glizzies/images/glizzy_1.png",
+    "assets/glizzies/images/glizzy_2.png",
+    "assets/glizzies/images/glizzy_3.png",
+    "assets/glizzies/images/glizzy_4.png",
+    "assets/glizzies/images/glizzy_5.png",
+    "assets/glizzies/images/glizzy_6.png"
   ],
   "unglizzies": [
-    "assets/unglizzy_1.png",
-    "assets/unglizzy_2.png",
-    "assets/unglizzy_3.png",
-    "assets/unglizzy_4.png",
-    "assets/unglizzy_5.png",
-    "assets/unglizzy_6.png"
+    "assets/unglizzies/images/unglizzy_1.png",
+    "assets/unglizzies/images/unglizzy_2.png",
+    "assets/unglizzies/images/unglizzy_3.png",
+    "assets/unglizzies/images/unglizzy_4.png",
+    "assets/unglizzies/images/unglizzy_5.png",
+    "assets/unglizzies/images/unglizzy_6.png"
   ]
 }
